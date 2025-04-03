@@ -69,6 +69,7 @@ def submit_click(event):
 
     f = open("Info.txt", "w")
     f.write("\n".join(text))
+    window.destroy()
 
 def status_file_click(event):
     filename = askopenfilename()
