@@ -14,9 +14,8 @@ def change_status(message):
     "status": "online",
     "custom_status": {
       "text": message,
-      "emoji":':hornetshock:'
+      "emoji_id":"678454768934322186"
     }
   }
   request = requests.patch(url, headers=header, json=jsonData)
-  
 change_status(message)
