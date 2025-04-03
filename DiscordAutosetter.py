@@ -12,7 +12,7 @@ def change_status(message):
   }
 
   jsonData = {
-    "status": "online"
+    "status": "online",
     "custom_status": {
       "text": message
     }
