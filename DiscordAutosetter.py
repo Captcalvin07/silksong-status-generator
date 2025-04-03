@@ -13,7 +13,8 @@ def change_status(message):
   jsonData = {
     "status": "online",
     "custom_status": {
-      "text": message
+      "text": message,
+      "emoji":':hornetshock:'
     }
   }
   request = requests.patch(url, headers=header, json=jsonData)
