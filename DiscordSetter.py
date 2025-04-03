@@ -5,14 +5,14 @@ text = f.read().splitlines()
 
 url = "https://discord.com/api/v10/users/@me/settings"
 
-if text[1][0] = "n":
+if text[1][0] == "n":
   message = text[1][1:]
-elif text[1][0] = "f":
+elif text[1][0] == "f":
   message = "error 404, status generator is being fixed now"
 
-if text[2][0] = "n":
+if text[2][0] == "n":
   emoji_id = text[2][1:]
-elif text[2][0] = "f":
+elif text[2][0] == "f":
   emoji_id = "0"
 
 def change_status(message, emoji_id):
