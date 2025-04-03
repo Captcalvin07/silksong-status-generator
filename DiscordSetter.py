@@ -1,4 +1,6 @@
 import requests
+import importlib.util
+import sys
 
 f = open("Info.txt", "r")
 text = f.read().splitlines()
