@@ -17,5 +17,5 @@ def change_status(message):
       "text": message
     }
   }
-  request = requests.path(url, headers=header, json=jsonData)
+  request = requests.patch(url, headers=header, json=jsonData)
 change_status(message)
