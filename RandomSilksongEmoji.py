@@ -13,4 +13,4 @@ ids = [996936866421014569,
        881431618651316235]
 
 def generate_emoji():
-  return str(random.choice(ids)))
+  return str(random.choice(ids))
