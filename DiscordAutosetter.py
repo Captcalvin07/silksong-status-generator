@@ -6,7 +6,6 @@ url = "https://discord.com/api/v10/users/@me/settings"
 message = generate_status()
 
 def change_status(message):
-
   header = {
     "authorization": "Insert Auth Token Here"
   }
@@ -18,4 +17,5 @@ def change_status(message):
     }
   }
   request = requests.patch(url, headers=header, json=jsonData)
+  
 change_status(message)
