@@ -23,7 +23,7 @@ elif text[2][0] == "f":
   foo = importlib.util.module_from_spec(spec)
   sys.modules["module.name"] = foo
   spec.loader.exec_module(foo)
-  message = foo.generate_emoji()
+  emoji_id = foo.generate_emoji()
 
 def change_status(message, emoji_id):
   header = {
