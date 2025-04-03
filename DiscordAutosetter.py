@@ -1,4 +1,4 @@
-from SilksongGenerator.py import generate_status
+from SilksongGenerator import generate_status
 import requests
 
 url = "https://discord.com/api/v10/users/@me/settings"
