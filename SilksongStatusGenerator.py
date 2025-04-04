@@ -5,12 +5,8 @@ def generate_status():
   days_remaining = 365-day_of_year-1
   percentage_chance = "{:.4f}".format(100/days_remaining)
  
-  chance = 1
-  temp_days = days_remaining+1
-  while chance > 0.5:
-    temp_days -=1
-    chance *= (temp_days-1)/temp_days
-  guess_date = datetime(datetime.now().year, 1, 1) + timedelta(days=365-temp_days - 1)
+  average_day =(365-day_of_year)/2
+  guess_date = datetime(datetime.now().year, 1, 1) + timedelta(days=365-average_day)
  
   guess_day_of_month = int(guess_date.strftime("%d"))
   if 4 <= guess_day_of_month <= 20 or 24 <= guess_day_of_month <= 30:
