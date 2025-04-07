@@ -6,6 +6,7 @@ def generate_status():
   current_month = datetime.now().strftime("%B")
   days_remaining = 365-day_of_year-1
   percentage_chance = "{:.4f}".format(100/days_remaining)
+  chance_difference = "{:.4f}".format((100/days_remaining)-(100/(days_remaining+1)))
 
   today = date.today()
   last_day = calendar.monthrange(today.year, today.month)[1]
@@ -13,4 +14,4 @@ def generate_status():
 
   month_chance = "{:.4f}".format(100/(days_remaining/days_remaining_month))
 
-  return percentage_chance + "% chance of Silksong tomorrow. " + month_chance + "% chance of Silksong in " + current_month + "."
+  return percentage_chance + "% chance of Silksong tomorrow, " + chance_difference + "% more than yesterday. "+ month_chance + "% chance of Silksong in " + current_month + "."
