@@ -19,9 +19,9 @@ def generate_status():
   
   if diff.days > 0:
     word = " day" if diff.days == 1 else " days"
-    return str(diff.days) + word + " until possible Silksong. If it could release now, we'd have a " + chance + "% chance Silksong tommorow!"
+    return str(diff.days) + word + " until possible Silksong. If it could release now, we'd have a " + chance + "% chance of Silksong tommorow!"
 
   if diff.days <= 0:
     words = " day remains!" if precision == 2 else " days remains!"
-    return chance + "% chance Silksong tommorow, " + str(days_remaining) + " possible" + words
+    return chance + "% chance of Silksong tommorow, " + str(days_remaining) + " possible" + words
 print (generate_status())
