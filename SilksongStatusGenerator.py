@@ -4,7 +4,7 @@ def generate_status():
   today = datetime.date.today()
   #today = datetime.date(2025,9,16)
   last_day = datetime.date(2025,9,18)
-  first_day = datetime.date(2025,6,5)
+  first_day = datetime.date(2025,6,7)
   diff = first_day - today
 
   days_remaining = (last_day - today).days
